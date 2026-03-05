@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact – Marradi Residency</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Archivo:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="space.html">Space</a></li>
+    <li><a href="marradi.html">Marradi</a></li>
+    <li><a href="guestbook.html">Guestbook</a></li>
+    <li><a href="apply.html">Apply</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+
+  <span class="eyebrow">Get in Touch</span>
+  <h1>Contact</h1>
+  <p class="lead">We are a small program and we respond personally to all enquiries. Please allow up to one week for a reply.</p>
+
+  <hr>
+
+  <div class="contact-grid">
+
+    <div>
+      <h2>Send a Message</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option value="">Select a topic…</option>
+            <option value="application">Application enquiry</option>
+            <option value="residency">Residency information</option>
+            <option value="donation">Donation or support</option>
+            <option value="press">Press or media</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="Your message…"></textarea>
+        </div>
+
+        <button type="submit" class="button" style="border:none; cursor:pointer; font-family:'Archivo',sans-serif;">
+          Send message
+        </button>
+
+      </form>
+    </div>
+
+    <div>
+      <h2>Information</h2>
+
+      <ul class="info-list" style="margin-bottom:48px">
+        <li>
+          <span>Email</span>
+          <span><a href="mailto:info@marradiresidency.org" style="color:#C57B57">info@marradiresidency.org</a></span>
+        </li>
+        <li>
+          <span>Location</span>
+          <span>Marradi, Metropolitan City of Florence, Tuscany, Italy</span>
+        </li>
+        <li>
+          <span>Applications</span>
+          <span>Submitted via <a href="apply.html" style="color:#C57B57">Submittable</a>. See the Apply page for details.</span>
+        </li>
+        <li>
+          <span>Response time</span>
+          <span>We aim to respond to all enquiries within one week.</span>
+        </li>
+      </ul>
+
+      <h3 style="font-size:18px; margin-bottom:16px">Frequently asked</h3>
+
+      <div style="margin-bottom:24px">
+        <p style="font-weight:500; margin-bottom:6px; font-size:15px">Is there a fee to apply?</p>
+        <p style="font-size:14px; opacity:.8; margin:0">No. There is no application fee.</p>
+      </div>
+
+      <div style="margin-bottom:24px">
+        <p style="font-weight:500; margin-bottom:6px; font-size:15px">Can I bring a partner or family?</p>
+        <p style="font-size:14px; opacity:.8; margin:0">The apartment is set up for a single resident. Partners or family members may be able to visit for part of the stay — please discuss when you apply.</p>
+      </div>
+
+      <div style="margin-bottom:24px">
+        <p style="font-weight:500; margin-bottom:6px; font-size:15px">Is Italian required?</p>
+        <p style="font-size:14px; opacity:.8; margin:0">No, though some basic Italian will enrich your daily life in Marradi. English is understood in most practical situations.</p>
+      </div>
+
+      <div style="margin-bottom:24px">
+        <p style="font-weight:500; margin-bottom:6px; font-size:15px">When are the residency seasons?</p>
+        <p style="font-size:14px; opacity:.8; margin:0">Spring: April through June. Autumn: September through November. We host one artist per season.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

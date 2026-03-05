@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marradi Residency</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Archivo:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.hero {
+  position: relative;
+  background: #EDE8E0;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('images/marradi-valley-views.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: .35;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.scroll-hint {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #2A2A2A;
+  opacity: .5;
+  z-index: 1;
+}
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.intro-grid img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+}
+.intro-grid .photo-placeholder {
+  height: 460px;
+}
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 80px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 100px;
+}
+.highlight-item {
+  text-align: center;
+}
+.highlight-item .stat {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 56px;
+  font-weight: 300;
+  color: #C57B57;
+  display: block;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.highlight-item p {
+  font-size: 13px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin: 0;
+  opacity: .7;
+}
+@media (max-width: 768px) {
+  .intro-grid { grid-template-columns: 1fr; gap: 40px; }
+  .highlights { grid-template-columns: 1fr; gap: 30px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="space.html">Space</a></li>
+    <li><a href="marradi.html">Marradi</a></li>
+    <li><a href="guestbook.html">Guestbook</a></li>
+    <li><a href="apply.html">Apply</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1>Marradi Residency</h1>
+    <p>Artist Residency Program in Tuscany</p>
+    <a class="button" href="apply.html">Apply Now</a>
+  </div>
+  <span class="scroll-hint">Scroll to explore</span>
+</div>
+
+<div class="page">
+
+  <div class="intro-grid">
+    <div>
+      <span class="eyebrow">Tuscany, Italy</span>
+      <h2>A place apart for artists who need time</h2>
+      <p class="lead">The Marradi Residency offers uninterrupted time and space to work in the Apennine mountains between Florence and Ravenna.</p>
+      <p>Artists of all disciplines are invited to spend weeks or months in one of Tuscany's most quietly beautiful towns — painting, writing, composing, or developing work free from the pressures of everyday life.</p>
+      <a href="about.html" class="button-outline" style="margin-top:20px">Learn more</a>
+    </div>
+    <div>
+      <div class="photo-placeholder" style="height:460px">Marradi valley</div>
+    </div>
+  </div>
+
+  <div class="highlights">
+    <div class="highlight-item">
+      <span class="stat">4–8</span>
+      <p>Weeks per residency</p>
+    </div>
+    <div class="highlight-item">
+      <span class="stat">2</span>
+      <p>Seasons per year</p>
+    </div>
+    <div class="highlight-item">
+      <span class="stat">1</span>
+      <p>Artist at a time</p>
+    </div>
+  </div>
+
+  <div style="text-align:center; padding-bottom: 40px;">
+    <span class="eyebrow">The Space</span>
+    <h2>A restored apartment in the heart of town</h2>
+    <p style="max-width:600px; margin: 0 auto 32px;">A fully equipped private apartment with a dedicated studio, walking distance from the town center, markets, and the surrounding countryside.</p>
+    <a href="space.html" class="button">See the Space</a>
+  </div>
+
+  <div class="gallery" style="margin-top:48px">
+    <div class="photo-placeholder" style="height:280px">Apartment interior</div>
+    <div class="photo-placeholder" style="height:280px">Studio space</div>
+    <div class="photo-placeholder" style="height:280px">Marradi rooftops</div>
+  </div>
+
+</div>
+
+</body>
+</html>
