@@ -1,89 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marradi Residency</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Archivo:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<style>
-.hero {
-  position: relative;
-  background: #EDE8E0;
-  overflow: hidden;
-}
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background-image: url('images/marradi-valley-views.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: .35;
-}
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-.scroll-hint {
-  position: absolute;
-  bottom: 36px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 12px;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  color: #2A2A2A;
-  opacity: .5;
-  z-index: 1;
-}
-.intro-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
-  margin-bottom: 100px;
-}
-.intro-grid img {
-  width: 100%;
-  height: 460px;
-  object-fit: cover;
-}
-.intro-grid .photo-placeholder {
-  height: 460px;
-}
-.highlights {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  padding: 80px 0;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 100px;
-}
-.highlight-item {
-  text-align: center;
-}
-.highlight-item .stat {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 56px;
-  font-weight: 300;
-  color: #C57B57;
-  display: block;
-  line-height: 1;
-  margin-bottom: 8px;
-}
-.highlight-item p {
-  font-size: 13px;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  margin: 0;
-  opacity: .7;
-}
-@media (max-width: 768px) {
-  .intro-grid { grid-template-columns: 1fr; gap: 40px; }
-  .highlights { grid-template-columns: 1fr; gap: 30px; }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dino Campana Literary Residency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -91,21 +13,22 @@
   <ul>
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="space.html">Space</a></li>
+    <li><a href="space.html">The Space</a></li>
     <li><a href="marradi.html">Marradi</a></li>
-    <li><a href="guestbook.html">Guestbook</a></li>
     <li><a href="apply.html">Apply</a></li>
-    <li><a href="donate.html">Donate</a></li>
     <li><a href="contact.html">Contact</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li class="lang-toggle"><a href="index.html" class="current-lang">EN</a> / <a href="it/index.html">IT</a></li>
   </ul>
 </nav>
 
 <div class="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg" style="background-image: url('images/marradi-valley-views.jpg');"></div>
   <div class="hero-content">
-    <h1>Marradi Residency</h1>
-    <p>Artist Residency Program in Tuscany</p>
-    <a class="button" href="apply.html">Apply Now</a>
+    <h1>Dino Campana Literary Residency</h1>
+    <span class="place">Marradi, Tuscany</span>
+    <p>Surrounded by green mountains and hills covered with pine and chestnut trees, and cut by the Lamone River, Marradi feels remote — far from tourists and the tran-tran of busy cities. Yet it's only an hour by train from Florence or Bologna.</p>
+    <a class="button" href="apply.html">Learn More About Applying</a>
   </div>
   <span class="scroll-hint">Scroll to explore</span>
 </div>
@@ -114,43 +37,75 @@
 
   <div class="intro-grid">
     <div>
-      <span class="eyebrow">Tuscany, Italy</span>
-      <h2>A place apart for artists who need time</h2>
-      <p class="lead">The Marradi Residency offers uninterrupted time and space to work in the Apennine mountains between Florence and Ravenna.</p>
-      <p>Artists of all disciplines are invited to spend weeks or months in one of Tuscany's most quietly beautiful towns — painting, writing, composing, or developing work free from the pressures of everyday life.</p>
-      <a href="about.html" class="button-outline" style="margin-top:20px">Learn more</a>
+      <span class="eyebrow">The Residency</span>
+      <h2>A place to write, think, and be inspired</h2>
+      <p class="lead">The Dino Campana Literary Residency supports writers — making sure that, like Campana, they will be inspired, tap the genius of creativity, experience nature and beauty, and pursue their craft and passion no matter what.</p>
+      <p>Marradi is the home of poet Dino Campana, who wrote and self-published <em>Canti Orfici</em> here in 1914. The residency is named in his honour and hosted in the heart of this quiet Apennine village.</p>
+      <a href="about.html" class="button-outline" style="margin-top:20px">About the Residency</a>
     </div>
     <div>
-      <div class="photo-placeholder" style="height:460px">Marradi valley</div>
+      <div class="photo-placeholder" style="height:480px">Marradi valley</div>
     </div>
   </div>
 
   <div class="highlights">
     <div class="highlight-item">
-      <span class="stat">4–8</span>
-      <p>Weeks per residency</p>
-    </div>
-    <div class="highlight-item">
       <span class="stat">2</span>
-      <p>Seasons per year</p>
+      <p>Writers at a time</p>
     </div>
     <div class="highlight-item">
-      <span class="stat">1</span>
-      <p>Artist at a time</p>
+      <span class="stat">4–6</span>
+      <p>Weeks per session</p>
+    </div>
+    <div class="highlight-item">
+      <span class="stat">Free</span>
+      <p>Accommodation</p>
     </div>
   </div>
 
-  <div style="text-align:center; padding-bottom: 40px;">
-    <span class="eyebrow">The Space</span>
-    <h2>A restored apartment in the heart of town</h2>
-    <p style="max-width:600px; margin: 0 auto 32px;">A fully equipped private apartment with a dedicated studio, walking distance from the town center, markets, and the surrounding countryside.</p>
-    <a href="space.html" class="button">See the Space</a>
+  <div style="max-width:720px; margin-bottom:80px;">
+    <span class="eyebrow">Sessions</span>
+    <h2>May through September</h2>
+    <ul class="sessions-list">
+      <li><span class="session-name">May</span><span class="session-duration">4 weeks</span></li>
+      <li><span class="session-name">June</span><span class="session-duration">4 weeks</span></li>
+      <li><span class="session-name">July</span><span class="session-duration">4 weeks</span></li>
+      <li><span class="session-name">August</span><span class="session-duration">4 weeks</span></li>
+      <li><span class="session-name">September</span><span class="session-duration">4 weeks</span></li>
+    </ul>
+    <p style="font-size:14px; color:#888; margin-bottom:0;">Application deadlines: <strong style="color:#4A4A4A;">December 1</strong> (May/June/July sessions) and <strong style="color:#4A4A4A;">March 31</strong> (August/September sessions).</p>
   </div>
 
-  <div class="gallery" style="margin-top:48px">
-    <div class="photo-placeholder" style="height:280px">Apartment interior</div>
-    <div class="photo-placeholder" style="height:280px">Studio space</div>
-    <div class="photo-placeholder" style="height:280px">Marradi rooftops</div>
+  <hr>
+
+  <div class="two-col" style="margin:80px 0;">
+    <div>
+      <span class="eyebrow">What We Offer</span>
+      <h2>Everything you need to focus on your work</h2>
+      <ul>
+        <li>Free accommodation in a fully furnished apartment in central Marradi</li>
+        <li>Private bedroom with workspace</li>
+        <li>Access to Centro Studi Campaniani archives</li>
+        <li>Workspace options throughout the village</li>
+        <li>A welcoming community in the mountains of Tuscany</li>
+      </ul>
+    </div>
+    <div>
+      <span class="eyebrow">Who Can Apply</span>
+      <h2>Writers at all career stages</h2>
+      <p>Fiction writers, poets, creative nonfiction writers, and literary translators with at least one published work (book, chapbook, or literary magazine publication).</p>
+      <p>For our inaugural year (2026), we are inviting a select group of writers. Open applications begin Fall 2026 for the 2027 season.</p>
+      <a href="apply.html" class="button" style="margin-top:16px">Learn More About Applying</a>
+    </div>
+  </div>
+
+  <hr>
+
+  <div style="text-align:center; padding:80px 0 40px;">
+    <span class="eyebrow">The Space</span>
+    <h2>A historic apartment in the heart of town</h2>
+    <p style="max-width:580px; margin:0 auto 32px;">Third floor of a historic building, five minutes' walk from the train station. Two private quarters. A shared kitchen, bathroom, and loggia overlooking the village.</p>
+    <a href="space.html" class="button-outline">See the Space</a>
   </div>
 
 </div>
